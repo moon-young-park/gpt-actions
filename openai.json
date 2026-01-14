@@ -1,0 +1,49 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "GitHub Search API",
+    "version": "v1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.github.com"
+    }
+  ],
+  "paths": {
+    "/search/repositories": {
+      "get": {
+        "operationId": "searchRepositories",
+        "summary": "Search GitHub Repositories",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Your search keyword"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Search results from GitHub"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
+}

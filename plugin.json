@@ -1,0 +1,14 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "GitHub Search",
+  "name_for_model": "search_github",
+  "description_for_human": "Search GitHub repositories by keyword",
+  "description_for_model": "Use this to search open-source plugins or code on GitHub",
+  "auth": {
+    "type": "bearer"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://your-link.com/openapi.json"
+  }
+}
