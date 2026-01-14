@@ -9,6 +9,6 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://your-link.com/openapi.json"
+    "url": "https://raw.githubusercontent.com/moon-young-park/gpt-actions/refs/heads/main/plugin.json"
   }
 }
